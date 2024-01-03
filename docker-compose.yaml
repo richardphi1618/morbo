@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  bot:
+    container_name: pyrva_bot
+    build: "."
+    image: "pyrva/bot:pycord_311"
+    env_file:
+      - .env
+    restart: always
